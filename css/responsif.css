@@ -1,0 +1,197 @@
+@media screen and (min-width: 235px)
+{
+    .calculator
+    {
+        width: 100%;
+    }
+    /* Box Calcu */
+    .calculator .box
+    {
+        width: 210px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 300px)
+{
+    .heading h1
+    {
+        font-size: 33px;
+        line-height: 33px;
+    }
+    .heading p
+    {
+        font-size: 14px;
+    }
+    .heading button
+    {
+        width: 124px;
+        font-size: 11px;
+    } 
+
+
+    .calculator .box
+    {
+        width: 250px;
+        height: 440px;
+    }
+}
+
+@media screen and (min-width: 440px)
+{
+    .box .result #input
+    {
+        font-size: 25px;
+        font-weight: 400;
+        font-style: italic;
+    }
+    .box .result #output
+    {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+
+
+    .calculator
+    {
+        width: 100%;
+        height: 90vh;
+    }
+    .calculator .box
+    {
+        width: 400px;
+        height: 680px;
+    }
+
+    .box .button .row span
+    {
+        text-align: center;
+        padding: 5px 10px;
+
+        border-radius: 9px;
+        font-size: 25px;
+    }   
+}
+
+@media screen and (min-width: 660px) and (max-width: 1000px)
+{
+    .container
+    {
+        width: 666PX;
+        max-width: 800px;
+    }
+    .content
+    {
+        width: 100%;
+        display: flex;
+    }
+    .heading h1
+    {
+        font-size: 73px;
+        line-height: 73px;
+    }
+    .heading p
+    {
+        font-size: 19px;
+    }
+    .heading button
+    {
+        width: 174px;
+        font-size: 14px;
+    } 
+
+
+    .box .result #input
+    {
+        font-size: 25px;
+        font-weight: 400;
+        font-style: italic;
+    }
+    .box .result #output
+    {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+
+
+    .calculator
+    {
+        width: 100%;
+        height: 90vh;
+    }
+    .calculator .box
+    {
+        width: 400px;
+        height: 680px;
+    }
+
+    .box .button .row span
+    {
+        text-align: center;
+        padding: 5px 10px;
+
+        border-radius: 9px;
+        font-size: 25px;
+    }   
+}
+
+@media screen and (min-width: 1000px)
+{
+        .container
+    {
+        width: 90%;
+    }
+    .content
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .heading{
+        padding: 80px 100px;
+    }
+    .heading h1
+    {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .heading p
+    {
+        font-size: 20px;
+    }
+    .heading button
+    {
+        width: 13vw;
+        font-size: 18px;
+    } 
+
+    .box .result #input
+    {
+        font-size: 33px;
+    }
+    .box .result #output
+    {
+        font-size: 26px;
+    }
+
+
+
+    .calculator
+    {
+        width: 100%;
+        height: auto;
+    }
+    .calculator .box
+    {
+        width: 420px;
+        height: 680px;
+    }
+
+    .box .button .row span
+    {
+        font-size: 20px;
+        padding: 15px 20px;
+    }      
+}
