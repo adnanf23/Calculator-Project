@@ -24,6 +24,7 @@ body
 {
     width: 100%;
     position: absolute;
+    z-index: -100;
 }
 #circle1
 {
@@ -216,6 +217,10 @@ nav h3
 @media screen and (min-width: 300px)
 {
     /* Circle */
+    .circle
+    {
+        opacity: 0.5;
+    }
     #circle1
     {
         right: 0px; 
@@ -404,6 +409,7 @@ nav h3
     {
         width: 35%;
         position: absolute;
+        opacity: 1.1;
     }
     #circle1
     {
