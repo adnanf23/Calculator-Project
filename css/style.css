@@ -121,6 +121,7 @@ nav h3
     font-size: 4.3vw;
     border-radius: 13px;
     padding: 10px;
+    cursor: pointer;
 }
 
 /* Calculator */

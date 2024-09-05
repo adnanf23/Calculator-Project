@@ -36,7 +36,8 @@ deleteInput.addEventListener('click', ()=>{
     input.innerText = input.innerText.slice(0, -1);
 })
 
-let lastInput = ""; // Menyimpan input terakhir
+let resultStored = null;
+let lastInput = "";
 const operators = ["+", "-", "*", "/"]; 
 
 // Function add operation to input
@@ -48,16 +49,29 @@ function addOperation(operator) {
     if (operators.includes(lastInput) && operators.includes(operator)) {
         return;
     }
+
+    if (resultStored !== null && operator !== '=') {
+        input.innerText = resultStored;
+        resultStored = null;
+    }
     
-    input.innerText += `${operator}`;
-    lastInput = operator; 
-}
+    if (currentValue !== '' || operator === '-') {
+        input.innerText += `${operator}`;
+        lastInput = operator; 
+}}
 
 // Function eval
 function calculate()
 {
+    if (resultStored !== null) {
+        input.innerText = resultStored + input.innerText;
+    }
+
+   
     const result = eval(input.innerText);
-    output.innerText = "= " + result
+    output.innerText = "= " + result;
+    resultStored = result;
+    lastInput = '=';
 }
 
 
